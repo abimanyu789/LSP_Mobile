@@ -1,0 +1,54 @@
+name: agenda_nusantara
+description: "Aplikasi Todo-List Agenda Nusantara untuk Sertifikasi Kompetensi Mobile Developer"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icon set untuk Cupertino (iOS-style icons)
+  cupertino_icons: ^1.0.8
+
+  # Package SQLite untuk penyimpanan data lokal
+  sqflite: ^2.3.3+1
+
+  # Mendapatkan path direktori pada perangkat (untuk database)
+  path_provider: ^2.1.4
+
+  # Utility untuk bergabung path file
+  path: ^1.9.0
+
+  # Package untuk grafik/chart statistik tugas
+  fl_chart: ^0.69.0
+
+  # Shared preferences untuk menyimpan pengaturan sederhana (username/password)
+  shared_preferences: ^2.3.3
+
+  # Package untuk format tanggal dan waktu Indonesia
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting rules untuk kode yang bersih
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  # Deklarasi aset gambar untuk foto profil developer
+  assets:
+    - assets/images/
